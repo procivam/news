@@ -1,7 +1,6 @@
 {
     "name": "procivam/news",
     "description": "News module for new CMS",
-    "type": "metapackage",
     "license": "MIT",
     "authors": [
         {
@@ -9,5 +8,15 @@
             "email": "protsiv.a.wezom@gmail.com"
         }
     ],
+    "type": "package",
+    "package": {
+        "name": "procivam/news",
+        "version": "1.*",
+        "source": {
+            "url": "git@github.com:procivam/news.git",
+            "type": "git",
+	        "reference": "1.*"
+        }
+    },
     "minimum-stability": "stable"
 }
