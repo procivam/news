@@ -6,8 +6,8 @@ Test front news module for laravel
 ```
 "repositories": [
     {
-        "url": "https://github.com/procivam/news",
-        "type": "git"
+        "type": "git",
+        "url": "https://github.com/procivam/news.git"
     }
 ],
 "require": {
@@ -15,6 +15,6 @@ Test front news module for laravel
 }
 ```
 2. Update Composer dependencies: Composer update
-3. Publish resources: php artisan vendor:publish
-4. Migrate: php artisan migrate
-5. Add service provider Procivam\News\NewsServiceProvider::class to Providers in config/app.php
+3. Add service provider Procivam\News\NewsServiceProvider::class to Providers in config/app.php
+4. Publish resources: php artisan vendor:publish
+5. Migrate: php artisan migrate
