@@ -16,5 +16,5 @@ Test front news module for laravel
 ```
 2. Update Composer dependencies: Composer update
 3. Add service provider Procivam\News\NewsServiceProvider::class to Providers in config/app.php
-4. Publish resources: php artisan vendor:publish
+4. Publish resources: php artisan vendor:publish --provider="Procivam\News\NewsServiceProvider"
 5. Migrate: php artisan migrate
