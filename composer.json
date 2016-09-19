@@ -8,6 +8,11 @@
             "email": "protsiv.a.wezom@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Procivam\\News\\": "src/"
+        }
+    },
     "type": "package",
     "package": {
         "name": "procivam/news",
