@@ -23,7 +23,7 @@ class CreateNewsTable extends Migration
             $table->text('keywords')->nullable();
             $table->text('description')->nullable();
             $table->string('image');
-            $table->timestamp('date');
+            $table->timestamp('date')->nullable();
             $table->boolean('status')->default(0);
             $table->integer('sort')->default(0);
             $table->integer('label_id')->nullable();
