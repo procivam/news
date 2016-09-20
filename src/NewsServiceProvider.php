@@ -22,18 +22,23 @@ class NewsServiceProvider extends ServiceProvider
         // Publish views
         $this->publishes([
             __DIR__.'/views' => resource_path('views/vendor/news'),
-        ]);
+        ], 'views');
 
         // Publish public
         $this->publishes([
             __DIR__.'/assertions/js' => public_path('js'),
-        ], 'public-js');
+        ], 'scripts');
+
          $this->publishes([
             __DIR__.'/assertions/css' => public_path('css'),
-        ], 'public-css');
+         ], 'styles');
 
-        // Load migrations
-        $this->loadMigrationsFrom(__DIR__.'/migrations');
+         $this->publishes([
+             __DIR__.'/public_controllers' => app_path('Http/Controllers'),
+         ], 'controllers');
+
+         // Load migrations
+         $this->loadMigrationsFrom(__DIR__.'/migrations');
     }
 
     /**

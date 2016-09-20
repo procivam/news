@@ -1,3 +1,3 @@
 <?php
 
-Route::get('news', ['uses' => 'Procivam\News\NewsController@index'])->name('news.index');
+Route::get('news', ['uses' => 'NewsController@index'])->name('news.index');
