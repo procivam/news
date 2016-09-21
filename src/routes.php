@@ -1,5 +1,5 @@
 <?php
 
-Route::group(['namespace'=> 'App\Http\Controllers'], function(){
-    Route::get('news', ['uses' => 'NewsController@index'])->name('news.index');
-});
+if (!Route::has('news.index')) {
+    Route::get('news', ['uses' => 'Procivam\News\NewsController@index'])->name('news.index');
+}
